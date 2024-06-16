@@ -1,55 +1,69 @@
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: rgba(0,0,0,0.75); }
-  }
-  
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 70vh; /* Adjust to fill viewport height */
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding: 20px;
-    overflow: hidden;
-  }
-  
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgba(0,0,0,0.75); }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.home-container .animated-text {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  border-right: 2px solid rgba(0,0,0,0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: typing 5s steps(50, end), blink-caret .75s step-end infinite;
+}
+
+.home-container .description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.download-button {
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
   .home-container .animated-text {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-    border-right: 2px solid rgba(0,0,0,0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    animation: typing 5s steps(50, end), blink-caret .75s step-end infinite;
+    font-size: 2em;
   }
-  
+
   .home-container .description {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 40px;
+    font-size: 1em;
   }
-  
+
   .download-button {
-    font-size: 1.3em;
-    color: #fff;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+    padding: 8px 16px;
   }
-  
-  .download-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
+}
