@@ -24,7 +24,7 @@ function Home() {
       <p className="description">
         I am a Software Engineering student at VIT Chennai with a passion for developing innovative applications and learning new technologies. I have experience in front-end and back-end development, and I am proficient in languages like Python, Java, HTML, CSS, JavaScript, and PHP. I am currently seeking opportunities to work on exciting projects and collaborate with other developers.
       </p>
-      <a href="/resume.pdf" target="_blank" download className="download-button">Download Resume</a>
+      <a href="/DONTHU_SAI_NAGA_VENKATA_AJAY_RAGHAVA.pdf" target="_blank" download className="download-button">Download Resume</a>
     </div>
   );
 }
