@@ -3,7 +3,7 @@ import './Home.css'; // Import the CSS file
 
 function Home() {
   const [text, setText] = useState("");
-  const message = "Hello! I am Ajay Raghava..";
+  const message = "Hello! I am Ajay..";
 
   useEffect(() => {
     let index = 0;
