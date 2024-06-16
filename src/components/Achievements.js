@@ -43,6 +43,14 @@ function Achievements() {
             <li>Facilitated workshops and seminars to educate and empower students on wellness practices.</li>
           </ul>
         </div>
+        <div className="activity">
+          <h3>KLP Force, Dr. KLP Public School, Member (06/2016 - 05/2017)</h3>
+          <ul>
+            <li>Maintained school premises discipline, ensuring a safe and orderly environment.</li>
+            <li>Monitored student behavior and enforced school rules to promote a culture of respect and responsibility.</li>
+            <li>Collaborated with faculty and staff to address disciplinary issues and implement preventive measures.</li>
+          </ul>
+        </div>
       </section>
     </div>
   );
