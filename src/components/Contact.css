@@ -1,64 +1,90 @@
 .contact-container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f5f7fa;
+  min-height: 60vh;
+  overflow-y: hidden;
+}
+
+.contact-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-sections {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-section {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.contact-section h2 {
+  font-size: 1.8em;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  font-size: 1.1em;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.social-links .social-divider {
+  margin: 0 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px 10px;
+  }
+
+  .contact-container h1 {
+    font-size: 2em;
+  }
+
+  .contact-sections {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background: #f5f7fa;
-    min-height: 60vh;
-    overflow-y: hidden; /* Prevent vertical scrolling */
   }
-  
-  .contact-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .contact-sections {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    width: 100%;
-    max-width: 800px; /* Adjust max-width as needed */
-  }
-  
+
   .contact-section {
-    flex: 1;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    overflow: hidden; /* Hide any overflow content */
+    margin-bottom: 20px;
   }
-  
+
   .contact-section h2 {
-    font-size: 1.8em;
-    color: #007BFF;
-    margin-bottom: 10px;
+    font-size: 1.5em;
   }
-  
+
   .contact-section p {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1em;
   }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-links a {
-    font-size: 1.1em;
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .social-links .social-divider {
-    margin: 0 10px;
-    font-size: 1.1em;
-    color: #666;
-  }
-  
+}
