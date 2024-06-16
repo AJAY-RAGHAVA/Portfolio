@@ -1,0 +1,53 @@
+/* Resume.css */
+
+.resume-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.resume-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.resume-container h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.resume-container .experience,
+.resume-container .education {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.resume-container .experience-item,
+.resume-container .education-item {
+  margin-top: 20px;
+}
+
+.resume-container .experience-item h4,
+.resume-container .education-item h4 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resume-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resume-container ul li {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
