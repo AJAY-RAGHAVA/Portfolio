@@ -12,7 +12,6 @@ function Navbar() {
       <div className="navbar-right">
         <ul className="navbar-menu">
           <li><Link to="/">Home</Link></li>
-          // <li><Link to="/about">About</Link></li>
           <li><Link to="/skills">Skills</Link></li>
           <li><Link to="/resume">Resume</Link></li>
           <li><Link to="/portfolio">Projects</Link></li>
