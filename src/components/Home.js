@@ -19,6 +19,7 @@ function Home() {
 
   return (
     <div className="home-container">
+      <br/><br/><br/>
       <h1 className="animated-text">{text}</h1>
       <p className="description">
         I am a Software Engineering student at VIT Chennai with a passion for developing innovative applications and learning new technologies. I have experience in front-end and back-end development, and I am proficient in languages like Python, Java, HTML, CSS, JavaScript, and PHP. I am currently seeking opportunities to work on exciting projects and collaborate with other developers.
